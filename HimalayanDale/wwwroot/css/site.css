@@ -1,0 +1,66 @@
+
+:root {
+    --bs-himalayan: #B9394D;
+    --bs-himalayan-rgb: 205, 33, 56;
+}
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #f1d7db !important;
+}
+
+.text-himalayan {
+    --bs-text-opacity: 1;
+    color: #B9394D !important;
+}
+.btn-himalayan {
+    color: #fff;
+    background-color: #B9394D;
+    border-color: #BD4053;
+}
+
+.btn-himalayan:hover {
+    color: #fff;
+    background-color: #CC4435;
+    border-color: #BD4053;
+}
+.btn-check:focus + .btn-himalayan, .btn-himalayan:focus {
+    color: #fff;
+    background-color: #CC4435;
+    border-color: #BD4053;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-check:checked + .btn-himalayan, .btn-check:active + .btn-himalayan, .btn-himalayan:active, .btn-himalayan.active, .show > .btn-himalayan.dropdown-toggle {
+    color: #fff;
+    background-color: #B9394D;
+    border-color: #BD4053;
+}
+
+.btn-check:checked + .btn-himalayan:focus, .btn-check:active + .btn-himalayan:focus, .btn-himalayan:active:focus, .btn-himalayan.active:focus, .show > .btn-himalayan.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-himalayan:disabled, .btn-himalayan.disabled {
+    color: #fff;
+    background-color: #B9394D;
+    border-color: #BD4053;
+}
+.bg-himalayan {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-himalayan-rgb), var(--bs-bg-opacity)) !important;
+}
